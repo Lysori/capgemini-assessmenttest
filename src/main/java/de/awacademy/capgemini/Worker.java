@@ -7,6 +7,7 @@ import javax.persistence.Id;
 
 @Entity // Mapping for Hibernate in order to create a database table
 public class Worker {
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
@@ -37,5 +38,5 @@ public class Worker {
 
 	public void setBranch(String branch) {
 		this.branch = branch;
-	
+	}
 }
